@@ -25,6 +25,16 @@ class Hello extends Api {
             'time' => date("Y-m-d H:i:s",time()),
             'name' => 'wf'
         );
-    }	
+    }
 
+    /**
+     * ceshi 
+     * @return array
+     */
+    public function wf(){
+        return array(
+            'time' => date("Y-m-d H:i:s",time()),
+            'name' => 'wf'
+        );
+    }
 }
