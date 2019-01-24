@@ -1,0 +1,14 @@
+composer.lock
+
+runtime/*
+
+congif/*
+
+public/docs
+
+public/uploads
+
+gitc
+
+.idea/
+.env
