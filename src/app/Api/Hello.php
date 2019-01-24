@@ -1,0 +1,29 @@
+<?php
+namespace App\Api;
+
+use PhalApi\Api;
+
+/**
+ * Class Hello测试接口
+ * @package App\Api
+ */
+class Hello extends Api {
+    /**
+     * 输出Hello World
+     * @desc 这事测试输出Hello World
+     */
+    public function world() {
+        return array('title' => 'Hello World!');
+    }
+
+    /**
+     * 获取当前时间
+     * @desc 这是测试输出前时间
+     */
+    public function test(){
+        return array(
+            'time' => date("Y-m-d H:i:s",time()),
+            'name' => 'app'
+        );
+    }
+}
