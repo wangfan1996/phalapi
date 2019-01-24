@@ -34,7 +34,7 @@ class Hello extends Api {
     public function wf(){
         return array(
             'time' => date("Y-m-d H:i:s",time()),
-            'name' => 'wf'
+            'name' => 'wd'
         );
     }
 }
