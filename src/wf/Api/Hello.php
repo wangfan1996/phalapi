@@ -34,7 +34,11 @@ class Hello extends Api {
     public function wf(){
         return array(
             'time' => date("Y-m-d H:i:s",time()),
+<<<<<<< HEAD
             'name' => 'wd'
+=======
+            'name' => 'sdasdasdasdsad'
+>>>>>>> 5b8fd6dc3ec6218a747c906651da08b818634238
         );
     }
 }
