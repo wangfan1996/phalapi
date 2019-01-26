@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>PhalApi开源接口框架 - 在线接口列表</title>
+
+    <!-- <link href="https://lib.baomitu.com/semantic-ui/2.3.3/semantic.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://staticfile.qnssl.com/semantic-ui/2.1.6/semantic.min.css">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+
+    <script src="https://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://lib.baomitu.com/semantic-ui/2.3.3/semantic.min.js"></script>
+    <meta name="robots" content="none"/>
+</head>
+<body>
+
+  <div class="ui fixed inverted menu">
+    <div class="ui container">
+      <a href="/docs.php" class="header item">
+        <img class="logo" src="http://cdn7.phalapi.net/20180316214150_f6f390e686d0397f1f1d6a66320864d6">
+        PhalApi开源接口框架      </a>
+      <a href="https://www.phalapi.net/" class="item">PhalApi</a>
+      <a href="http://docs.phalapi.net/#/v2.0/" class="item">文档</a>
+      <a href="http://qa.phalapi.net/" class="item">社区</a>
+
+     <div class="right menu">
+         <div class="item">
+             <div class="ui icon input">
+             <form action="/docs.php?search=k" method="get">
+                 <input type="text" name="keyword" placeholder="搜索接口" value="">
+             </form>
+             </div>
+         </div>
+      </div>
+    </div>
+  </div>
+
+<div class="row" style="margin-top: 60px;" ></div>
+
+<div class="ui text container" style="max-width: none !important; width: 1200px" id="menu_top">
+    <div class="ui floating message">
+        
+        <div class="ui grid container" style="max-width: none !important;">
+                        <div class="four wide column">
+                <div class="ui vertical accordion menu">
+                                    <div class="item"><h4>接口服务列表&nbsp;(14)</h4></div>
+
+                <div class="item"><h4 class="title active" style="font-size:16px;margin:0px;"><i class="dropdown icon"></i>App\ (11)</h4><div class="content active" style="margin-left:-16px;margin-right:-16px;margin-bottom:-13px;"><a class="item active" data-tab="App_Examples_CURD">数据库CURD基本操作示例</a><a class="item " data-tab="App_Examples_QrCode">生成二维码</a><a class="item " data-tab="App_Examples_Upload">文件上传示例</a><a class="item " data-tab="App_Hello">Class Hello测试接口</a><a class="item " data-tab="App_Site">默认接口服务类</a><a class="item " data-tab="App_User">用户模块接口服务</a></div></div><!-- END OF NAMESPACE --><div class="item"><h4 class="title active" style="font-size:16px;margin:0px;"><i class="dropdown icon"></i>Wf\ (3)</h4><div class="content " style="margin-left:-16px;margin-right:-16px;margin-bottom:-13px;"><a class="item " data-tab="Wf_Hello">Wf下面Hello测试接口</a></div></div><!-- END OF NAMESPACE -->                    <div class="item">
+                        <div class="content" style="margin:-13px -16px;">
+                            <a class="item" href="#menu_top">返回顶部↑↑↑</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+             <!-- 折叠时的菜单 -->
+
+            <!-- 折叠时与展开时的布局差异 -->
+                        <div class="twelve wide stretched column">
+                                                <div class="ui  tab active" data-tab="App_Examples_CURD">
+                        <table
+                            class="ui red celled striped table red celled striped table">
+                            <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>接口服务</th>
+                                <th>接口名称</th>
+                                <th>更多说明</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+
+                            <tr><td>1</td><td><a href="App.Examples_CURD.Delete.html" target='_blank'>App.Examples_CURD.Delete</a></td><td>删除数据</td><td> 根据ID删除数据库中的一条纪录数据</td></tr><tr><td>2</td><td><a href="App.Examples_CURD.Get.html" target='_blank'>App.Examples_CURD.Get</a></td><td>获取数据</td><td> 根据ID获取数据库中的一条纪录数据</td></tr><tr><td>3</td><td><a href="App.Examples_CURD.GetList.html" target='_blank'>App.Examples_CURD.GetList</a></td><td>获取分页列表数据</td><td> 根据状态筛选列表数据，支持分页</td></tr><tr><td>4</td><td><a href="App.Examples_CURD.Insert.html" target='_blank'>App.Examples_CURD.Insert</a></td><td>插入数据</td><td> 向数据库插入一条纪录数据</td></tr><tr><td>5</td><td><a href="App.Examples_CURD.Update.html" target='_blank'>App.Examples_CURD.Update</a></td><td>更新数据</td><td> 根据ID更新数据库中的一条纪录数据</td></tr>                            </tbody>
+                        </table>
+
+                    <!-- 主题切换，仅当在线时才支持 -->
+                    
+                    </div>
+                                        <div class="ui  tab " data-tab="App_Examples_QrCode">
+                        <table
+                            class="ui red celled striped table orange celled striped table">
+                            <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>接口服务</th>
+                                <th>接口名称</th>
+                                <th>更多说明</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+
+                            <tr><td>1</td><td><a href="App.Examples_QrCode.Png.html" target='_blank'>App.Examples_QrCode.Png</a></td><td>根据文本内容，生成二维码</td><td> 可根据传入的广西内容，生成对应的二维码，还可以调整尺寸大小。可以直接输出png图片，也可以返回base64后的图片数据。</td></tr>                            </tbody>
+                        </table>
+
+                    <!-- 主题切换，仅当在线时才支持 -->
+                    
+                    </div>
+                                        <div class="ui  tab " data-tab="App_Examples_Upload">
+                        <table
+                            class="ui red celled striped table yellow celled striped table">
+                            <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>接口服务</th>
+                                <th>接口名称</th>
+                                <th>更多说明</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+
+                            <tr><td>1</td><td><a href="App.Examples_Upload.Go.html" target='_blank'>App.Examples_Upload.Go</a></td><td>图片文件上传</td><td> 只能上传单个图片文件</td></tr>                            </tbody>
+                        </table>
+
+                    <!-- 主题切换，仅当在线时才支持 -->
+                    
+                    </div>
+                                        <div class="ui  tab " data-tab="App_Hello">
+                        <table
+                            class="ui red celled striped table olive celled striped table">
+                            <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>接口服务</th>
+                                <th>接口名称</th>
+                                <th>更多说明</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+
+                            <tr><td>1</td><td><a href="App.Hello.Test.html" target='_blank'>App.Hello.Test</a></td><td>获取当前时间</td><td> 这是测试输出前时间</td></tr><tr><td>2</td><td><a href="App.Hello.World.html" target='_blank'>App.Hello.World</a></td><td>输出Hello World</td><td> 这事测试输出Hello World</td></tr>                            </tbody>
+                        </table>
+
+                    <!-- 主题切换，仅当在线时才支持 -->
+                    
+                    </div>
+                                        <div class="ui  tab " data-tab="App_Site">
+                        <table
+                            class="ui red celled striped table teal celled striped table">
+                            <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>接口服务</th>
+                                <th>接口名称</th>
+                                <th>更多说明</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+
+                            <tr><td>1</td><td><a href="App.Site.Index.html" target='_blank'>App.Site.Index</a></td><td>默认接口服务</td><td> 默认接口服务，当未指定接口服务时执行此接口服务</td></tr>                            </tbody>
+                        </table>
+
+                    <!-- 主题切换，仅当在线时才支持 -->
+                    
+                    </div>
+                                        <div class="ui  tab " data-tab="App_User">
+                        <table
+                            class="ui red celled striped table blue celled striped table">
+                            <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>接口服务</th>
+                                <th>接口名称</th>
+                                <th>更多说明</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+
+                            <tr><td>1</td><td><a href="App.User.Login.html" target='_blank'>App.User.Login</a></td><td>登录接口</td><td> 根据账号和密码进行登录操作</td></tr>                            </tbody>
+                        </table>
+
+                    <!-- 主题切换，仅当在线时才支持 -->
+                    
+                    </div>
+                                        <div class="ui  tab " data-tab="Wf_Hello">
+                        <table
+                            class="ui red celled striped table violet celled striped table">
+                            <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>接口服务</th>
+                                <th>接口名称</th>
+                                <th>更多说明</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+
+                            <tr><td>1</td><td><a href="Wf.Hello.Test.html" target='_blank'>Wf.Hello.Test</a></td><td>获取当前时间</td><td> 这是测试输出前时间</td></tr><tr><td>2</td><td><a href="Wf.Hello.Wf.html" target='_blank'>Wf.Hello.Wf</a></td><td>ceshi</td><td>//请使用@desc 注释</td></tr><tr><td>3</td><td><a href="Wf.Hello.World.html" target='_blank'>Wf.Hello.World</a></td><td>输出Hello World</td><td> 这事测试输出Hello World</td></tr>                            </tbody>
+                        </table>
+
+                    <!-- 主题切换，仅当在线时才支持 -->
+                    
+                    </div>
+                    
+
+            </div>
+        </div>
+        <div class="ui blue message">
+            <strong>温馨提示：</strong> 此接口服务列表根据后台代码自动生成，可在接口类的文件注释的第一行修改左侧菜单标题。
+        </div>
+    </div>
+</div>
+
+  <div class="ui inverted vertical footer segment" style="margin-top:30px; background: #1B1C1D none repeat scroll 0% 0%;" >
+    <div class="ui container">
+      <div class="ui stackable inverted divided equal height stackable grid">
+        <div class="eight wide column centered">
+            <div class="column" align="center" >
+                <img src="https://www.phalapi.net/images/icon_logo.png" alt="PhalApi">
+            </div>
+            <div class="column" align="center">
+                <p>
+                    <strong>接口，从简单开始！</strong>
+                    © 2015-2019 Powered  By <a href="http://www.phalapi.net/" target="">PhalApi 2.4.2 </a> All Rights Reserved. <span id="version_update"></span>
+                    <br />
+                    此版本由<a href="https://www.phalapi.net/ad.html">点击成为</a>独家赞助
+                </p>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<script type="text/javascript">
+    $('.accordion.menu a.item').tab({'deactivate':'all'});
+    $('.ui.sticky').sticky();
+	//当点击跳转链接后，回到页面顶部位置
+    $(".accordion.menu a.item").click(function() {
+        $('body,html').animate({
+                scrollTop: 0
+            },
+            500);
+        return false;
+    });
+
+    $('.ui.accordion').accordion({'exclusive':false});
+
+    checkLastestVersion();
+
+    // 检测最新版本
+    function checkLastestVersion() {
+        var version = '2.4.2';
+        $.ajax({
+            url:'https://www.phalapi.net/check_lastest_version.php',
+                type:'get',
+                data:{version : version},
+                success:function(res,status,xhr){
+                    console.log(res);
+                    if (!res.ret || res.ret != 200) {
+                        return;
+                    }
+                    if (res.data.need_upgrade >= 0) {
+                        return;
+                    }          
+
+                    $('#version_update').html('&nbsp; | &nbsp; <a target="_blank" href=" ' + res.data.url + ' "><strong>免费升级到 PhalApi ' + res.data.version + '</strong></a>');              
+                },
+                error:function(error){
+                    console.log(error)
+                }
+        })
+
+    }
+</script>
+
+</body>
+</html>

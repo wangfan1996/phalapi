@@ -50,7 +50,8 @@ class Upload extends Api {
         $imgPath = $uploadFolder .  $name . $ext;
         if (move_uploaded_file($tmpName, $imgPath)) {
             $rs['code'] = 1;
-            $rs['url'] = sprintf('http://%s/uploads/%s%s', $_SERVER['SERVER_NAME'], $name, $ext);
+//            $rs['url'] = sprintf('http://%s/uploads/%s%s', $_SERVER['SERVER_NAME'], $name, $ext);
+            $rs['url'] = sprintf('http://%s/uploads/%s%s', 'localhost/phalapi/phalapi/public', $name, $ext);
         }
 
         return $rs;
